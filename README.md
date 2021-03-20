@@ -15,6 +15,15 @@ pyenv local venv-django-ava
 ```
 Repare que após esse comando um arquivo de nome `.python-version` foi criado na pasta do projeto. Ele é a instrução de que ambiente virtual ou verso do python você quer utilizar naquela pasta. No caso estará escrito `venv-django-ava`.
 
+## Notebooks para estudo [NÃO FUNCIONA NO 3.5.1]
+É interessante o uso de notebooks do jupyter para estudo de python em suas mais diversas aplicações. Ao estudar, sempre faça anotações que sejam práticas, asssim você irá poder ver o funcionamento de seu código estudado em tempo real. Para instalar crie um arquivo na pasta de seu projeto chamado `requirements.txt`. Esse arquivo conterá todos os pacotes que iremos utilizar em nosso ambiente virtual. É uma forma de organizar o projeto e facilitar instalação de dependências. Dentro do arquivo, na primeira linha escreva o nome do pacote que iremos instalar nesse momento, no caso `notebook`. Para vermais pacotes que podem ser instalados no python, você pode acessar https://pypi.org/. Salve o arquivo e execute o comando para instalar todos os pacotes do arquivo: 
+```sh
+pip install -r requirements.txt
+pip install --upgrade pip # Para atualizar o pip e remover o warning
+python -m notebook # Pronto para usar
+```
+
 ## Erros conhecidos
-O python 3.5.1, por ser mais antigo, precisa de um pacote `libcss` com compatibilidade. https://stackoverflow.com/questions/52873193/error-the-python-ssl-extension-was-not-compiled-missing-the-openssl-lib-inst
+1. O python 3.5.1, por ser mais antigo, precisa de um pacote `libcss` com compatibilidade. https://stackoverflow.com/questions/52873193/error-the-python-ssl-extension-was-not-compiled-missing-the-openssl-lib-inst
+2. `notebook` tem erro ao instalar no python 3.5.1
 
