@@ -15,3 +15,6 @@ pyenv local venv-django-ava
 ```
 Repare que após esse comando um arquivo de nome `.python-version` foi criado na pasta do projeto. Ele é a instrução de que ambiente virtual ou verso do python você quer utilizar naquela pasta. No caso estará escrito `venv-django-ava`.
 
+## Erros conhecidos
+O python 3.5.1, por ser mais antigo, precisa de um pacote `libcss` com compatibilidade. https://stackoverflow.com/questions/52873193/error-the-python-ssl-extension-was-not-compiled-missing-the-openssl-lib-inst
+
